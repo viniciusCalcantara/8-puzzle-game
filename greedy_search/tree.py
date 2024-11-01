@@ -20,6 +20,8 @@ def visualize_tree(root, solution_nodes):
     dot = graphviz.Digraph(comment='Árvore de Busca')
 
     def add_nodes_edges(node):
+        description = node.__str__()
+        description += 'h = ' + str(node.manhattan_distance())
         if node.parent is None:
             dot.node(
                 str(id(node)), 
@@ -32,14 +34,14 @@ def visualize_tree(root, solution_nodes):
             if node in solution_nodes:
                 dot.node(
                     str(id(node)), 
-                    node.__str__(), 
+                    description, 
                     color='red', 
                     style='filled', 
                     fillcolor='lightgrey'
                 )
                 dot.edge(str(id(node.parent)), str(id(node)), color='red')
             else:
-                dot.node(str(id(node)), node.__str__())
+                dot.node(str(id(node)), description)
                 dot.edge(str(id(node.parent)), str(id(node)))
 
         for child in node.childs:
