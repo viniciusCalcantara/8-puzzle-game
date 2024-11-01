@@ -25,5 +25,5 @@ Not every combination of `(initial_state, goal_state)` is solvable—only half o
 In other words, the arrangement of the tiles affects whether a solution path exists. The solver includes a function to check solvability based on this parity, ensuring that only solvable configurations are attempted.
 
 For more information, see:
-- [YouTube Explanation](https://www.youtube.com/watch?v=YI1WqYKHi78&t=1021s)
+- [Why is this 15-Puzzle Impossible? - Numberphile](https://www.youtube.com/watch?v=YI1WqYKHi78&t=1021s)
 - [GeeksforGeeks: Check if an instance of the 8-puzzle is solvable](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/)
