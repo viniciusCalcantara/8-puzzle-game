@@ -29,4 +29,14 @@ For more information, see:
 - [GeeksforGeeks: Check if an instance of the 8-puzzle is solvable](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/)
 
 ## Search Tree
-It's possible to see the correspondent search tree for this problem on both approaches
+It's possible to see the correspondent search tree for this problem instance (on both approaches):
+
+**Initial State:** 
+1 7 2 
+8 4 5 
+6 3 0
+
+**Goal State:**
+1 2 3 
+8 0 4 
+7 6 5
