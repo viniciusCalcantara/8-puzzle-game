@@ -27,3 +27,6 @@ In other words, the arrangement of the tiles affects whether a solution path exi
 For more information, see:
 - [Why is this 15-Puzzle Impossible? - Numberphile](https://www.youtube.com/watch?v=YI1WqYKHi78&t=1021s)
 - [GeeksforGeeks: Check if an instance of the 8-puzzle is solvable](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/)
+
+## Search Tree
+It's possible to see the correspondent search tree for this problem on both approaches
