@@ -1,0 +1,67 @@
+// Árvore de Busca
+digraph {
+	2553115932528 [label="2 8 3 
+1 6 4 
+7 5 0 
+" color=red fillcolor=lightgrey style=filled]
+	2553119240512 [label="2 8 3 
+1 6 0 
+7 5 4 
+"]
+	2553115932528 -> 2553119240512
+	2553119240560 [label="2 8 3 
+1 6 4 
+7 0 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553115932528 -> 2553119240560 [color=red]
+	2553119241472 [label="2 8 3 
+1 0 4 
+7 6 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553119240560 -> 2553119241472 [color=red]
+	2553147937408 [label="2 0 3 
+1 8 4 
+7 6 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553119241472 -> 2553147937408 [color=red]
+	2553147937504 [label="0 2 3 
+1 8 4 
+7 6 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553147937408 -> 2553147937504 [color=red]
+	2553147937552 [label="1 2 3 
+0 8 4 
+7 6 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553147937504 -> 2553147937552 [color=red]
+	2553147937600 [label="1 2 3 
+7 8 4 
+0 6 5 
+"]
+	2553147937552 -> 2553147937600
+	2553147937648 [label="1 2 3 
+8 0 4 
+7 6 5 
+" color=red fillcolor=lightgrey style=filled]
+	2553147937552 -> 2553147937648 [color=red]
+	2553147937456 [label="2 3 0 
+1 8 4 
+7 6 5 
+"]
+	2553147937408 -> 2553147937456
+	2553147937360 [label="2 8 3 
+0 1 4 
+7 6 5 
+"]
+	2553119241472 -> 2553147937360
+	2553147937312 [label="2 8 3 
+1 4 0 
+7 6 5 
+"]
+	2553119241472 -> 2553147937312
+	2553147936352 [label="2 8 3 
+1 6 4 
+0 7 5 
+"]
+	2553119240560 -> 2553147936352
+}

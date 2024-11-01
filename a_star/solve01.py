@@ -1,5 +1,5 @@
-from greedy_search.data_structs import Problem
-from greedy_search.best_first_search import best_first_search, parity
+from data_structs import Problem
+from best_first_search import best_first_search, parity
 
 initial_state = tuple([
                     tuple([

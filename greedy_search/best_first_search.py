@@ -18,8 +18,8 @@ def expand(problem: Problem, node: Node):
         yield Node(state=new_s, goal=problem.goal_state, parent=node, action=action, path_cost=cost)
 
 
-def best_first_search(problem: Problem, reached) -> Node | None:
-    node = Node(problem.initial_state, goal=problem.goal_state)
+def best_first_search(problem: Problem, reached, root) -> Node | None:
+    node = root
     frontier = [node]
     reached[node.state] = node
     while not frontier == []:
@@ -31,4 +31,5 @@ def best_first_search(problem: Problem, reached) -> Node | None:
             if s not in reached or child.path_cost < reached[s].path_cost:
                 reached[s] = child
                 bisect.insort(frontier, child)
+                node.childs.append(child)
     return None

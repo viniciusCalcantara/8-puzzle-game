@@ -1,4 +1,4 @@
-from data_structs import Problem
+from data_structs import Problem, Node
 from best_first_search import best_first_search, parity
 
 initial_state = tuple([
@@ -43,7 +43,8 @@ initial_state_parity = parity(initial_state[1])
 goal_state_parity = parity(goal_state[1])
 
 if initial_state_parity == goal_state_parity:
-    ans_node = best_first_search(problem, reached)
+    root = Node(problem.initial_state, goal=problem.goal_state)
+    ans_node = best_first_search(problem, reached, root)
     aux_node = ans_node
 
     print('This is the solution:')

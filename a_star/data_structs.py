@@ -29,6 +29,7 @@ class Node:
         self.state = state
         self.goal = goal
         self.parent = parent
+        self.childs = []
         self.action = action
         self.path_cost = path_cost
 
