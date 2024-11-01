@@ -31,16 +31,16 @@ For more information, see:
 ## Search Tree
 It's possible to see the correspondent search tree for this problem instance (on both approaches):
 
-**Initial State:** 
-`
+**Initial State:** <br>
+```
 1 7 2 
 8 4 5 
 6 3 0
-`
+```
 
-**Goal State:**
-`
+**Goal State:**<br>
+```
 1 2 3 
 8 0 4 
 7 6 5
-`
+```
