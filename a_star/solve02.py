@@ -40,7 +40,7 @@ reached = {}
 initial_state_parity = parity(initial_state[1]) 
 goal_state_parity = parity(goal_state[1])
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
     if initial_state_parity == goal_state_parity:
         root = Node(problem.initial_state, goal=problem.goal_state)
         ans_node = best_first_search(problem, reached, root)

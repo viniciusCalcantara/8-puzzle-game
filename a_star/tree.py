@@ -25,11 +25,12 @@ def visualize_tree(root, solution_nodes):
         if node.parent is None:
             dot.node(
                 str(id(node)), 
-                node.__str__(), 
+                description, 
                 color='red', 
                 style='filled', 
                 fillcolor='lightgrey'
             )
+            solution_nodes.remove(node)
         else:
             if node in solution_nodes:
                 dot.node(
@@ -40,6 +41,7 @@ def visualize_tree(root, solution_nodes):
                     fillcolor='lightgrey'
                 )
                 dot.edge(str(id(node.parent)), str(id(node)), color='red')
+                solution_nodes.remove(node)
             else:
                 dot.node(str(id(node)), description)
                 dot.edge(str(id(node.parent)), str(id(node)))
@@ -48,7 +50,7 @@ def visualize_tree(root, solution_nodes):
             add_nodes_edges(child)
 
     add_nodes_edges(root)
-    dot.render('./a_star/search_tree/tree_by_Astar_approach', view=True)
+    dot.render('./search_tree/tree_by_Astar_approach', view=True)
 
 solution_nodes = get_solution_nodes(ans_node)
 visualize_tree(root, solution_nodes)

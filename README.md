@@ -29,7 +29,7 @@ For more information, see:
 - [GeeksforGeeks: Check if an instance of the 8-puzzle is solvable](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/)
 
 ## Search Tree
-It's possible to see the correspondent search tree (on the search_tree directories) for this problem instance (on both approaches):
+It's possible to see the correspondent search tree on a pfd file (on the search_tree directories) for this problem instance (on both approaches):
 
 **Initial State:** <br>
 ```
